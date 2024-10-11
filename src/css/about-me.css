@@ -1,0 +1,176 @@
+.about-me-title {
+font-family: "Impact", sans-serif;   
+font-size: 52px;
+line-height: 1.23;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+text-align: left;
+color: #292929;
+margin-bottom: 40px;
+}
+
+.about-me-title-span {
+    font-size: 52px;
+    line-height: 1.23;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: left;
+    color: #00b068; 
+}
+
+.about-me-image {
+    border-radius: 16px;
+    margin-bottom: 40px;
+}
+.about-me-text-gap {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+
+
+
+.about-me-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #292929; 
+}
+.about-me-subtitle {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #292929;
+    margin-bottom: 32px;
+}
+
+.about-me-item {
+    
+    position: relative;
+    padding-left: 20px;  
+}
+
+.about-me-item::before {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    background-color: #00B068; 
+    top: 10px;;
+    width: 4px;
+    height: 4px;
+   
+     
+}
+
+.about-me-section {
+    margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .about-me-section-flex {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    .about-me-subtitle-flex {
+        display: flex;
+        flex-direction: column;
+        width: 336px;
+        height: 680px;
+    }
+
+    .about-me-image {
+        width: 336px;
+        height: 392px;
+    }
+
+   .flex-for-tablet {
+    display: flex;
+    gap: 32px;
+   }
+
+   .about-me-section {
+    width: 336px;
+    height: 280px;
+   }
+
+   .about-me-title {
+    font-family: "Impact", sans-serif;   
+    font-size: 108px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-align: left;
+    color: #292929;
+    margin-bottom: 40px;
+    }
+
+    .about-me-title-span {
+        font-family: "Impact", sans-serif; 
+        font-size: 108px;
+        line-height: 1.15;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        text-align: left;
+        color: #00b068; 
+    }
+
+    .about-me-subtitle {
+        /* font-family: "Poppins", sans-serif; */
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 1.33;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: #292929;
+        margin-bottom: 32px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .about-me-title {
+        font-family: "Impact", sans-serif;   
+        font-size: 108px;
+        line-height: 1.15;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        text-align: left;
+        color: #292929;
+        margin-bottom: 40px;
+        }
+
+        .about-me-title-span {
+            font-family: "Impact", sans-serif;
+            font-size: 108px;
+            line-height: 1.15;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            text-align: left;
+            color: #00b068; 
+        }
+
+        .about-me-subtitle {
+            /* font-family: "Poppins", sans-serif; */
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 1.33;
+            letter-spacing: 0.01em;
+            text-transform: uppercase;
+            color: #292929;
+            margin-bottom: 32px;
+        }
+
+        .about-me-image {
+            width: 384px;
+            height: 448px;
+        }
+}
