@@ -89,10 +89,6 @@
     grid-area: h;
   }
 
-  .benefits-list-header {
-    width: 704px;
-  }
-
   .benefits-header {
     font-size: 20px;
   }
@@ -104,22 +100,21 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .benefits {
-    padding-top: 164px;
+  .benefits-wrapper {
+    padding-top: 117px;
     background-image: url(../img/benefits/decor-bg-3@2x.webp);
     background-repeat: no-repeat;
     background-size: 526px 408px;
-    background-position: top 100px right 100px;
+    background-position: top 10px right 100px;
   }
 
   .benefits-list-header {
-    width: 681px;
-    height: 372px;
     margin: 0;
   }
+
   .benefits-list {
-    position: absolute;
-    top: 550px;
+    position: relative;
+    top: -100px;
     grid-template-columns: repeat(3, 384px);
     grid-template-rows: repeat(2, 1fr);
     align-items: center;
