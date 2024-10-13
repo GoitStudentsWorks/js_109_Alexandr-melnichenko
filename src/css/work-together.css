@@ -269,14 +269,14 @@ color: #f0f0f0;
     padding: 62px 32px;
     max-width: 700px;
     margin: 0 auto;
-    background-image: url(../img/work/decor-1x-work.png);
+    background-image: url(../img/work/decor-bg-1x-tablet.png);
     background-repeat: no-repeat;
     background-position: 100% 0;
   }
 
   @media screen and (min-resolution: 192dpi) {
     .work-together {
-      background-image: url(../img/work/decor-2x-work.png);
+      background-image: url(../img/work/decor-bg-2x-tablet.png);
     }
   }
 
@@ -340,7 +340,14 @@ color: #f0f0f0;
     padding: 82px 32px;
     max-width: 1216px;
     margin: 0 auto;
+    background-image: url(../img/work/decor-1x-work-desktop.png);
   }
+
+    @media screen and (min-resolution: 192dpi) {
+      .work-together {
+        background-image: url(../img/work/decor-2x-work-desktop.png);
+      }
+    }
 
   .work-together-title {
     margin-bottom: 80px;
