@@ -1,0 +1,176 @@
+
+
+.tech-skills-container {
+    width: 100%;
+    height: 244px;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  .marquee {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 280px;
+  }
+  
+  
+  .marquee-line {
+    flex-shrink: 0;
+    min-width: 50%;
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 104px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #292929;
+    background: #bcdfd1;
+    width: 100%;
+    height: 104px;
+  } 
+  
+  .current {
+    color: #00B068;
+    background-color: #e4e5e6;
+  }
+  
+  .marquee-normal, .marquee-diagonal {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  
+  
+  .marquee-inner {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  
+  
+  .marquee-normal {
+  height: 104px;
+  }
+  
+  .marquee-diagonal {
+    top: 100px;
+    transform: rotate(+2deg);
+    height: 104px;
+  }
+  
+  .marquee-normal .marquee-inner {
+    animation: marqueeLineNormal 12s linear infinite;
+  }
+  
+  .marquee-diagonal .marquee-inner {
+    animation: marqueeLineDiagonal 12s linear infinite;
+  }
+  
+  .marquee-span {
+    margin-right: 10px;
+  }
+  
+  .marquee-square {
+    display: inline-block;
+    border-radius: 2px;
+    width: 8px;
+    height: 8px;
+    background-color: #00B068;
+    margin: 0 10px;
+    vertical-align: middle;
+  }
+  
+  .marquee-square-diagonal {
+    display: inline-block;
+    border-radius: 2px;
+    width: 8px;
+    height: 8px;
+    background-color: #292929;
+    margin: 0 10px;
+    vertical-align: middle;
+  }
+  
+  
+
+
+
+
+  @keyframes marqueeLineNormal {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);  
+    }
+   }
+  
+   @keyframes marqueeLineDiagonal {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);  
+    }
+   }
+  
+   @media only screen and (min-width: 768px) {
+    .tech-skills-container {
+      height: 280px;
+    }
+  
+    .marquee-line {
+        font-size: 36px;
+        line-height: 128px;
+        letter-spacing: 0.01em;
+        height: 128px;
+      } 
+  
+      .marquee-normal {
+        height: 128px;
+          }
+        
+        .marquee-diagonal {
+         height: 128px;
+        }
+  
+  }
+  
+  @media only screen and (min-width: 1280px) {
+    .tech-skills-container {
+      height: 280px;
+    }
+  
+    .marquee-line {
+        font-size: 36px;
+        line-height: 128px;
+        letter-spacing: 0.01em;
+        height: 128px;
+      } 
+  
+      .marquee-normal {
+        height: 128px;
+          }
+        
+        .marquee-diagonal {
+         height: 128px;
+        }
+  
+  }
+  
+  
+  
+    
+  
+    
