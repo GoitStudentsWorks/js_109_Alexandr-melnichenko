@@ -47,7 +47,6 @@ body.dark-mode {
   background: #00b068;
 }
 
-
  .header-container {
   display: flex;
   align-items: center;
@@ -58,6 +57,10 @@ body.dark-mode {
   display: none;
 }
 
+.mobile-menu-navigation {
+  display: none;
+}
+
 .btn-menu {
   display: flex;
   width: 32px;
@@ -65,7 +68,7 @@ body.dark-mode {
   justify-content: center;
   align-items: center;
   border: none;
-  background-color: #1c2225;
+  background-color: #f0f0f0;
   padding: 0;
 }
 
@@ -127,11 +130,14 @@ text-transform: uppercase;
 
 .input-header:checked + .move-header::before {
   transform: translateX(24px);
+  box-shadow: 0 .2rem .5rem #e4e5e6;
 }
 
 
 @media screen and (min-width: 360px) {
- 
+  .mobile-menu-navigation {
+    display: flex;
+  }
   .menuItem-header {
     display: block;
     margin: 24px 50px;
@@ -153,9 +159,9 @@ text-transform: uppercase;
   .btn-menu {
     position: fixed;
     z-index: 100;
-    top: 4rem;
+    top: 3.6rem;
     right: 3rem;
-    padding: 4px;
+    padding: 0;
     background: #f0f0f0;
     cursor: pointer;
   }
