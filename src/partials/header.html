@@ -31,55 +31,52 @@
           </li>
         </ul>
       </nav>
-        <button
-      class="btn-menu js-open-menu"
-      type="button"
-      aria-label="open menu navigation"
-    >
-      <svg class="btn-menu-icon" width="32" height="32">
-        <use href="./img/icons.svg#icon-header-menu"></use>
-      </svg>
-      <svg class="btn-close-icon" width="44" height="44">
-        <use href="./img/icons.svg#icon-close-x"></use>
-      </svg>
-    </button>
+        
 
      <!-- Menu backdrop -->
 
- <div class="backdrop js-menu-container">
     <nav class="mobile-menu-navigation">
-      <ul class="mobile-menu-list">
-        <li class="mobile-menu-list-item">
+      <ul class="menu-header">
+        <li>
           <a
-            class="mobile-menu-link"
-            data-menu-close
+            class="menuItem-header"
             aria-label="read about me"
             href="#about-me"
             >About me</a
           >
         </li>
-        <li class="mobile-menu-list-item">
+        <li>
           <a
-            class="mobile-menu-link"
-            data-menu-close
-            aria-label="view our collection"
+            class="menuItem-header"
+            aria-label="view my projects"
             href="#projects"
             >Projects
           </a>
         </li>
-        <li class="mobile-menu-list-item">
+        <li>
           <a
-            class="mobile-menu-link"
-            data-menu-close
-            aria-label="make an order"
+            class="menuItem-header"
+            aria-label="my contacts"
             href="#contacts"
             >Contacts</a
           >
         </li>
       </ul>
     </nav>
+    <button
+      class="btn-menu js-open-menu"
+      type="button"
+      aria-label="open menu navigation"
+    >
+      <svg class="btn-menu-icon">
+        <use href="./img/icons.svg#icon-header-menu"></use>
+      </svg>
+      <svg class="btn-close-icon">
+        <use href="./img/icons.svg#icon-close-x"></use>
+      </svg>
+    </button>
    </div>
-   </div>
+  
 
    
     <script type="module" src="./js/header.js" defer></script>
