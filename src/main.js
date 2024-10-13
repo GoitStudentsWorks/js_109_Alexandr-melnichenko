@@ -4,3 +4,4 @@ import Swiper from 'swiper';
 import 'swiper/css';
 
 import './js/work-together';
+import './js/faq';
