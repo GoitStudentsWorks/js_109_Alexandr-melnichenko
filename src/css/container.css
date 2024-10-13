@@ -12,6 +12,7 @@
 padding: 62px 32px;
   }
 
+
   h1 {
     font-family: 'Impact';
     font-size: 136px;
@@ -33,8 +34,10 @@ h3 {
 font-size: 36px;
 letter-spacing: 0.5px;
 line-height: 48px;
-font-weight: 500;
-}
+
+} 
+
+
 
 caption {
   font-family: 'Poppins';
