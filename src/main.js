@@ -7,3 +7,4 @@ import { projects } from './js/my-projects';
 console.log(projects);
 
 import './js/work-together';
+import './js/faq';
