@@ -1,10 +1,18 @@
 <header class="section section-topline">
     <div class="container header-container">
       <a class="logo" aria-label="go to homepage" href="./index.html"
-        >LLOYDJEFFERSON<img src="" alt="logo" width="44" height="39"
-      /></a>
+        >Lloyd<span class="colortext-header">Jefferson.</span></a>
+        </label>
       <nav class="navigation nav-header">
         <ul class="nav-list-header">
+          <li>
+            <label class="switch-header">
+              <input class="input-header" type="checkbox" id="chk">
+              <span class="move-header">
+              </span>
+              <div class="switch-header-ball"></div>
+            </label>
+          </li>
           <li>
             <a class="nav-link-header" aria-label="read about me" href="#about-me">About me</a>
           </li>
@@ -22,66 +30,57 @@
             >
           </li>
         </ul>
+      </nav>
         <button
-      class="menu-button js-open-menu"
+      class="btn-menu js-open-menu"
       type="button"
       aria-label="open menu navigation"
     >
-      <svg class="menu-batton-icon" width="44" height="30">
-        <use href="./img/icons.svg#menu-icon"></use>
+      <svg class="btn-menu-icon" width="32" height="32">
+        <use href="./img/icons.svg#icon-header-menu"></use>
+      </svg>
+      <svg class="btn-close-icon" width="44" height="44">
+        <use href="./img/icons.svg#icon-close-x"></use>
       </svg>
     </button>
-      </nav>
-    </div>
 
-    <!-- Menu backdrop -->
+     <!-- Menu backdrop -->
 
-    <div class="backdrop js-menu-container">
-      <div class="mobile-menu js-menu-container" id="mobile-menu" data-menu>
-        <div class="mobile-menu-top">
-          <button
-            class="mobile-menu-close js-close-menu"
-            id="close"
-            aria-label="Close menu"
+ <div class="backdrop js-menu-container">
+    <nav class="mobile-menu-navigation">
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-list-item">
+          <a
+            class="mobile-menu-link"
             data-menu-close
+            aria-label="read about me"
+            href="#about-me"
+            >About me</a
           >
-            <svg class="mobile-menu-close-icon" width="44" height="44">
-              <use href="./img/icons.svg#close-icon"></use>
-            </svg>
-          </button>
-        </div>
-        <nav class="mobile-menu-navigation">
-          <ul class="mobile-menu-list">
-            <li class="mobile-menu-list-item">
-              <a
-                class="mobile-menu-link"
-                data-menu-close
-                aria-label="read about me"
-                href="#about-me"
-                >ABOUT ME</a
-              >
-            </li>
-            <li class="mobile-menu-list-item">
-              <a
-                class="mobile-menu-link"
-                data-menu-close
-                aria-label="view our collection"
-                href="#projects"
-                >Projects
-              </a>
-            </li>
-            <li class="mobile-menu-list-item">
-              <a
-                class="mobile-menu-link"
-                data-menu-close
-                aria-label="make an order"
-                href="#contacts"
-                >Contacts</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    <script type="module" src="../js/empty.js" defer></script>
+        </li>
+        <li class="mobile-menu-list-item">
+          <a
+            class="mobile-menu-link"
+            data-menu-close
+            aria-label="view our collection"
+            href="#projects"
+            >Projects
+          </a>
+        </li>
+        <li class="mobile-menu-list-item">
+          <a
+            class="mobile-menu-link"
+            data-menu-close
+            aria-label="make an order"
+            href="#contacts"
+            >Contacts</a
+          >
+        </li>
+      </ul>
+    </nav>
+   </div>
+   </div>
+
+   
+    <script type="module" src="./js/header.js" defer></script>
   </header>
