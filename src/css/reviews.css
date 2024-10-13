@@ -6,16 +6,14 @@
     line-height: 123%;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--black);
     text-align: center;
     margin-bottom: 40px;
 }
 .swiper-container {
     max-width: 360px;
-    background-color: transparent;
     border-radius: 16px;
     margin-bottom: 24px;
-    height: 296px;
+    height: auto;
     overflow: hidden;
 }
 .swiper-wrapper {
@@ -35,7 +33,6 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.03em;
-    color: #292929;
     margin-bottom: 24px;
     text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
@@ -51,12 +48,11 @@
     height: 40px;
 }
 .person-text {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: var(--font-family);
     font-weight: 600;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.03em;
-    color: black;
 }
 
 .buttons-container {
@@ -73,22 +69,30 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
+}
+.prev-button svg {
+    rotate: -180deg;
 }
 .prev-button svg,
 .next-button svg {
     stroke: #292929;
 }
+.slider-button[disabled] {
+    box-shadow: none;
+}
 .slider-button[disabled] svg {
     stroke: #E4E5E6;
 }
+.slider-button:hover {
+    color: #BBBBBB
+}
 
 
-                  /* Tablet view */
 
 @media screen and (min-width: 768px) {
     
     .swiper-container {
-        height: 224px;
         max-width: 768px;
     }
     .reviews-title {
@@ -96,7 +100,6 @@
     }
 }
 
-                   /* Desktop view */
 
 @media screen and (min-width: 1280px) {
 

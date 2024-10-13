@@ -9,8 +9,10 @@
 <body>
 
 <section class="reviews container">
+
     <h2 class="reviews-title">Reviews</h2>
     <div class="swiper-container">
+        
         <ul class="review-list swiper-wrapper" >
             <li class="review-item swiper-slide">
                 <p class="review-text"></p>
@@ -21,9 +23,20 @@
             </li>
         </ul>
     </div>
+
     <div class="buttons-container">
-        <button class="slider-button prev-button"> -- </button>
-        <button class="slider-button next-button"><svg width="24" height="24"><use href="../img/icons.svg#icon-reviews-arrow-right"></use></svg></button>
+
+        <button type="button" class="slider-button prev-button" disabled>
+                <svg width="24" height="24">
+                    <use href="/img/icons.svg#icon-reviews-arrow-right"></use>
+                </svg>
+        </button>
+        
+        <button type="button" class="slider-button next-button" disabled>
+                <svg width="24" height="24">
+                    <use href="/img/icons.svg#icon-reviews-arrow-right"></use>
+                </svg>
+        </button>
     </div>
 </section>
     
@@ -33,4 +46,3 @@
 </body>
 </html>
 
-<svg width="24" height="24"><use href="../img/icons.svg#icon-reviews-left-arrow"></use></svg>

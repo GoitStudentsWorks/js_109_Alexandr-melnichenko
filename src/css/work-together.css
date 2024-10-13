@@ -3,7 +3,7 @@
   max-width: 320px;
   margin: 0 auto;
   position: relative;
-  background-color: #F0F0F0;
+  /* background-color: #F0F0F0; */
 }
 
 
@@ -31,7 +31,7 @@
   line-height: 1.56;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #292929;
+  /* color: #292929; */
 }
 
 .work-together-contacts {
@@ -65,7 +65,7 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #292929;
+  /* color: #292929; */
   text-align: center;
   vertical-align: top;
 }
@@ -94,7 +94,7 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #292929;
+  /* color: #292929; */
 }
 
 *,
@@ -121,7 +121,7 @@ a:focus {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #292929;
+  /* color: #292929; */
 }
 
 .work-together-form textarea:hover,
@@ -221,7 +221,7 @@ button {
   position: absolute;
   right: 20px;
   top: 20px;
-  background-color: #f0f0f0;
+  background-color: inherit;
   border: none;
 }
 
@@ -244,24 +244,39 @@ button {
   line-height: 1.5;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #292929;
+  /* color: #292929; */
 }
 
-/*-------END MODAL--------*/
+.modal-window-icon{
+  stroke: #000;
+  fill: #000;
+}
+/*-dark-theme-modal-window----*/
+.dark-theme-modal-window{
+background-color: #2a2d32;
+stroke: #f0f0f0;
+
+}
+.dark-theme-modal-window-paragraph{
+color: #f0f0f0;
+}
+/*----------------------------*/
+
+/*----------------------END MODAL--------------------*/
 
 @media screen and (min-width: 768px) {
   .work-together {
     padding: 62px 32px;
     max-width: 700px;
     margin: 0 auto;
-    background-image: url(../img/decor-1x.png);
+    background-image: url(../img/work/decor-bg-1x-tablet.png);
     background-repeat: no-repeat;
     background-position: 100% 0;
   }
 
   @media screen and (min-resolution: 192dpi) {
     .work-together {
-      background-image: url(../img/decor-2x.png);
+      background-image: url(../img/work/decor-bg-2x-tablet.png);
     }
   }
 
@@ -280,7 +295,7 @@ button {
     line-height: 1.6;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #292929;
+    /* color: #292929; */
     width: 518px;
     margin-bottom: 32px;
   }
@@ -325,7 +340,14 @@ button {
     padding: 82px 32px;
     max-width: 1216px;
     margin: 0 auto;
+    background-image: url(../img/work/decor-1x-work-desktop.png);
   }
+
+    @media screen and (min-resolution: 192dpi) {
+      .work-together {
+        background-image: url(../img/work/decor-2x-work-desktop.png);
+      }
+    }
 
   .work-together-title {
     margin-bottom: 80px;
