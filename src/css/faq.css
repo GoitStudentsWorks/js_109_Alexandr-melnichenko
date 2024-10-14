@@ -1,0 +1,202 @@
+
+.faq-title {
+    max-width: 320px;
+    font-family: Impact;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1.2;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.faq-title-accent{
+    color: #00b068;
+}
+
+
+
+  /* list */
+.faq-list{
+    max-width: 320px;
+}
+.faq-item {
+    min-width: 320px;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+
+.faq-item .faq-item-title {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.faq-item .faq-btn {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 28px 72px 28px 24px;
+  display: block;
+  cursor: pointer;
+  background-color: transparent;
+  transition: color 0.25s ease;
+  position: relative;
+  text-decoration: none;
+  margin: 0;
+  border: 0;
+  border-bottom: 1px solid #e4e5e6;
+}
+
+
+
+.faq-item.is-active {
+    background-color: #bcdfd1;
+} 
+.faq-icon-up {
+  width: 32px;
+  position: absolute;
+  right: 24px;
+  top: 41px;
+  fill: transparent;
+  stroke: transparent;
+}
+.faq-icon-down {
+width: 32px;
+position: absolute;
+right: 24px;
+top: 41px;
+stroke:#292929;
+fill: transparent;
+
+}
+.faq-item.is-active .faq-icon-up{
+  stroke: #292929;
+} 
+.faq-item.is-active .faq-icon-down {
+  fill: transparent;
+  stroke: transparent;
+}
+.faq-item.is-active .faq-btn {
+    padding-bottom: 24px;
+    border-bottom: none;
+}
+
+.faq-item .ac-panel {
+  overflow: hidden;
+  transition-property: height, visibility;
+  transition-timing-function: ease;
+}
+.faq-item .ac-panel .faq-item-tex  {
+  width: 272px;
+  font-family: Poppins;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 28px;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+.faq-item.js-enabled .ac-panel {
+  visibility: hidden;
+}
+.faq-item.is-active .ac-panel {
+  visibility: visible;
+}
+   .faq-icon {
+    fill-opacity: 0;
+    stroke:#292929;
+  } 
+
+  /* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+    .faq-title {
+        width: 592px;
+        font-size: 108px;
+        line-height: 1.1;
+        margin-bottom: 60px;
+    }
+     
+    .faq-list{
+      width: 704px;
+    }
+    .faq-item {
+      width: 704px;
+    }
+    .faq-item .faq-btn {
+      font-size: 20px;
+      width: 704px;
+      padding: 28px 80px 28px 24px;
+    }
+    .faq-item .ac-panel .faq-item-tex  {
+      width: 656px;
+    }
+  }
+
+
+  /* Styles for Desktop devices */
+  @media only screen and (min-width: 1280px) {
+    .container {
+      max-width: 1280px;
+      padding: 82px 32px;
+    }
+    .faq-container {
+      display: flex;
+      justify-content: space-between;
+      background-image: url(/img/faq/faq-decor-1x.png);
+      background-repeat: no-repeat;
+      background-size: 526px 408px;
+      background-position-y: 690px;
+      background-position-x: 30px;
+    }
+    .faq-title {
+      width: 520px;
+      height: 372px;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+    .faq-list{
+      width: 592px;
+      position: relative;
+      right: 275px;
+      padding-top: 265px;
+      /* position: relative;
+      margin: 0 0 0 auto;
+      right: 275px;
+      top: -150px */
+      /*  */
+      /* position: relative;
+      float: right;
+      right: 275px;
+      top: -150px */
+      /* right: 305px */
+      /* top: 350px;
+      left: 624px; */
+      /* position: relative;
+      top: -150px;
+      left: 624px */
+    }
+    .faq-item {
+      width: 592px;
+    }
+    .faq-item .faq-btn {
+      width: 592px;
+    }
+    .faq-item .ac-panel .faq-item-tex  {
+      width: 544px;
+    }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      .faq-container {
+        background-image: url('/img/faq/faq-decor-2x.png');
+      }
+    }
+  }
