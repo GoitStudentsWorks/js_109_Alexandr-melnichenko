@@ -2,7 +2,7 @@
 
 .tech-skills-container {
     width: 100%;
-    height: auto;
+    height: 244px;
   }
   
   .visually-hidden {
@@ -24,38 +24,26 @@
     height: 280px;
   }
   
-  /* body.dark {
-    --background: var(--bg-dark);
-    --text-color: var(--text-light);
-  } */
-
+  
   .marquee-line {
     flex-shrink: 0;
+    min-width: 50%;
     white-space: nowrap;
     font-weight: 500;
     font-size: 32px;
     line-height: 104px;
     letter-spacing: 0.02em;
     text-transform: uppercase;
+    color: #292929;
     background: #bcdfd1;
-    display: flex;
-    align-items: center;
-  
+    width: 100%;
+    height: 104px;
   } 
-
-  body.dark .marquee-line {
-    background: #204136; 
-}
   
-
   .current {
     color: #00B068;
     background-color: #e4e5e6;
   }
-
-  body.dark .current {
-    background: #2a2d32;
-}
   
   .marquee-normal, .marquee-diagonal {
     position: absolute;
@@ -68,7 +56,6 @@
   .marquee-inner {
     display: flex;
     flex-wrap: nowrap;
-    width: max-content;
   }
   
   
@@ -84,11 +71,11 @@
   }
   
   .marquee-normal .marquee-inner {
-    animation: marqueeLineNormal 15s linear infinite;
+    animation: marqueeLineNormal 12s linear infinite;
   }
   
   .marquee-diagonal .marquee-inner {
-    animation: marqueeLineDiagonal 15s linear infinite;
+    animation: marqueeLineDiagonal 12s linear infinite;
   }
   
   .marquee-span {
@@ -114,11 +101,6 @@
     margin: 0 10px;
     vertical-align: middle;
   }
-
-  body.dark .marquee-square-diagonal {
-    background-color: #f0f0f0;
-}
-  
   
   
 
@@ -152,6 +134,7 @@
         font-size: 36px;
         line-height: 128px;
         letter-spacing: 0.01em;
+        height: 128px;
       } 
   
       .marquee-normal {
@@ -173,6 +156,7 @@
         font-size: 36px;
         line-height: 128px;
         letter-spacing: 0.01em;
+        height: 128px;
       } 
   
       .marquee-normal {
