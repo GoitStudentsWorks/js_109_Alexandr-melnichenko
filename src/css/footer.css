@@ -21,7 +21,7 @@ footer {
   line-height: 100%;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #292929;
+  /* color: #292929; */
   cursor: pointer;
 }
 
@@ -52,7 +52,7 @@ footer {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.03em;
-  color: #292929;
+  /* color: #292929; */
   cursor: pointer;
 }
 
@@ -64,7 +64,7 @@ footer {
   line-height: 150%;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #292929;
+  /* color: #292929; */
 }
 
 .footer-bottom {
