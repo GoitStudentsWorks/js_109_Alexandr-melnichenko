@@ -1,8 +1,10 @@
+.tech-skills-section {
 
+}
 
 .tech-skills-container {
     width: 100%;
-    height: 244px;
+    height: auto;
   }
   
   .visually-hidden {
@@ -34,10 +36,8 @@
     line-height: 104px;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    color: #292929;
     background: #bcdfd1;
-    width: 100%;
-    height: 104px;
+    
   } 
   
   .current {
@@ -71,11 +71,11 @@
   }
   
   .marquee-normal .marquee-inner {
-    animation: marqueeLineNormal 12s linear infinite;
+    animation: marqueeLineNormal 10s linear infinite;
   }
   
   .marquee-diagonal .marquee-inner {
-    animation: marqueeLineDiagonal 12s linear infinite;
+    animation: marqueeLineDiagonal 10s linear infinite;
   }
   
   .marquee-span {
@@ -127,7 +127,7 @@
   
    @media only screen and (min-width: 768px) {
     .tech-skills-container {
-      height: 280px;
+      height: auto;
     }
   
     .marquee-line {
@@ -149,7 +149,7 @@
   
   @media only screen and (min-width: 1280px) {
     .tech-skills-container {
-      height: 280px;
+      height: auto;
     }
   
     .marquee-line {
