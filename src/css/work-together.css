@@ -19,7 +19,7 @@
 
 
   & .title-span {
-    color: #292929;
+    color: var(--text-color);
   }
 }
 
@@ -31,7 +31,7 @@
   line-height: 1.56;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  /* color: #292929; */
+  color: var(--text-color);
 }
 
 .work-together-contacts {
@@ -65,7 +65,7 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  /* color: #292929; */
+  color: var(--text-color);
   text-align: center;
   vertical-align: top;
 }
@@ -94,7 +94,8 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  /* color: #292929; */
+  color: var(--text-color);
+  background-color: #e4e5e6;
 }
 
 *,
@@ -121,7 +122,8 @@ a:focus {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  /* color: #292929; */
+  color: var(--text-color);
+  background-color: #e4e5e6;
 }
 
 .work-together-form textarea:hover,
@@ -214,7 +216,7 @@ button {
   padding: 48px 32px;
   width: 256px;
   height: 232px;
-  background-color: #f0f0f0;
+  background-color: var(--background);
 }
 
 .modal-window-button {
@@ -244,21 +246,21 @@ button {
   line-height: 1.5;
   letter-spacing: 0.03em;
   text-align: center;
-  /* color: #292929; */
+  color: var(--text-color);
 }
 
 .modal-window-icon{
-  stroke: #000;
-  fill: #000;
+  stroke: var(--text-color);
+  fill: var(--text-color);
 }
 /*-dark-theme-modal-window----*/
 .dark-theme-modal-window{
-background-color: #2a2d32;
+background-color: var(--background);
 stroke: #f0f0f0;
 
 }
 .dark-theme-modal-window-paragraph{
-color: #f0f0f0;
+color: var(--text-color);
 }
 /*----------------------------*/
 
@@ -295,7 +297,7 @@ color: #f0f0f0;
     line-height: 1.6;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    /* color: #292929; */
+    /* color: var(--text-color) */
     width: 518px;
     margin-bottom: 32px;
   }
