@@ -1,6 +1,7 @@
 .work-together {
+  box-sizing: border-box;
   padding: 40px 20px;
-  max-width: 320px;
+  max-width: 360px;
   margin: 0 auto;
   position: relative;
   /* background-color: #F0F0F0; */
@@ -269,7 +270,7 @@ color: var(--text-color);
 @media screen and (min-width: 768px) {
   .work-together {
     padding: 62px 32px;
-    max-width: 700px;
+    max-width: 768px;
     margin: 0 auto;
     background-image: url(../img/work/decor-bg-1x-tablet.png);
     background-repeat: no-repeat;
@@ -340,7 +341,7 @@ color: var(--text-color);
 @media screen and (min-width: 1280px) {
   .work-together {
     padding: 82px 32px;
-    max-width: 1216px;
+    max-width: 1280px;
     margin: 0 auto;
     background-image: url(../img/work/decor-1x-work-desktop.png);
   }
