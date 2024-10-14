@@ -1,14 +1,54 @@
 //   Dark mode
 
-const chk = document.getElementById("chk");
+let checkbox = document.querySelector('#chk');
+let body = document.querySelector('body');
 
-chk.addEventListener("change", () => {
-    document.body.classList.toggle("dark-mode");
-})
+let localStorageTheme = localStorage.getItem('theme');
+
+const setThemeColor = () => {
+  localStorageTheme === 'dark' ? setDarkMode() : setLightMode();
+}
+
+const checkModeSetting = () => {
+  window.matchMedia('prefers-color-scheme: dark').addEventListener('change', () => {
+    checkThemeChange();
+  });
+}
+
+const  checkThemeChange = () => {
+  if(localStorageTheme == null && window.matchMedia('prefers-color-scheme: dark').matches) {
+    setDarkMode();
+  } else if (localStorageTheme && window.matchMedia('prefers-color-scheme: dark').matches) {
+    setDarkMode();
+  } else {
+    setLightMode();
+  }
+  }
+
+const setDarkMode = () => {
+body.classList = "dark";
+localStorage.setItem('theme', 'dark');
+checkbox.checked = true;
+}
+
+const setLightMode = () => {
+body.classList = "light";
+localStorage.setItem('theme', 'light');
+checkbox.checked = false;
+}
+
+checkModeSetting();
+checkThemeChange();
+setThemeColor();
+
+checkbox.addEventListener('click', () => checkbox.checked ? setDarkMode() : setLightMode());
+
+
+
 
 // Mobile menu
 
-const menu = document.querySelector(".menu-header");
+const menu = document.querySelector(".mobile-menu-header");
 const menuItems = document.querySelectorAll(".menuItem-header");
 const hamburger= document.querySelector(".btn-menu");
 const closeIcon= document.querySelector(".btn-close-icon");
