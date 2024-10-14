@@ -9,5 +9,5 @@ import './js/faq';
 import './js/reviews';
 import './js/benefits';
 import './js/header';
-import './js/tech-skills';
+
 
