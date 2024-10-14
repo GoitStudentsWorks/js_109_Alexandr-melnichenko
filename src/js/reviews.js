@@ -8,6 +8,10 @@ register();
 const BASE_URL = "https://portfolio-js.b.goit.study/api/reviews";
 const prevButton = document.querySelector(".prev-button");
 const nextButton = document.querySelector(".next-button");
+const reviewsSection = document.querySelector('.reviews'); 
+let serverError = false; 
+let lastKnownScrollPosition = 0;
+let ticking = false;
 
 async function fetchReviews() {
     try {
@@ -15,13 +19,7 @@ async function fetchReviews() {
         renderReviews(data);
         initializeSwiper();
     } catch (error) {
-        iziToast.show({
-            title: "Not Found",
-            messageColor: "black",
-            color: "red",
-            timeout: 2000,
-            position: "topCenter",
-        });
+        serverError = true; 
     }
 }
 
@@ -81,4 +79,41 @@ function initializeSwiper() {
     updateButtonStates();
 }
 
+function isSectionInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+function checkAndShowError() {
+    if (serverError && isSectionInViewport(reviewsSection)) {
+        iziToast.show({
+            title: "Not Found",
+            messageColor: "black",
+            color: "red",
+            timeout: 2000,
+            position: "topRight",
+        });
+        document.removeEventListener("scroll", onScroll); 
+}
+}
+function onScroll(event) {
+    lastKnownScrollPosition = window.scrollY;
+
+    if (!ticking) {
+        window.requestAnimationFrame(() => {
+            checkAndShowError();
+            ticking = false;
+        });
+
+        ticking = true;
+    }
+}
+
 fetchReviews();
+
+document.addEventListener("scroll", onScroll);
