@@ -52,7 +52,7 @@
 </symbol>
 
 <symbol id="icon-work-together-cross" viewBox="0 0 32 32">
-<path d="M8.22 5.394l-2.824 2.826 7.776 7.78-7.78 7.78 2.83 2.826 7.778-7.778 7.78 7.78 2.826-2.83-7.778-7.778 7.78-7.78-2.83-2.826-7.778 7.778-7.78-7.78z"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M24 8l-16 16M8 8l16 16"></path>
 </symbol>
 
 <symbol id="icon-ep-success" viewBox="0 0 32 32">
