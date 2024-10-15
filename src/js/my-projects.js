@@ -127,37 +127,26 @@ const projectsPerLoad = 3;
 
 function loadProjects() {
     const projectList = document.getElementById('projects-list');
-    
     for (let i = loadedProjects; i < loadedProjects + projectsPerLoad && i < projects.length; i++) {
         const project = projects[i];
-        
         const listItem = document.createElement('li');
         
         listItem.innerHTML = `
         <div class="each-project">
         <div class="image-tech">
         <picture>
-
             <source media="(min-width: 1280px)" 
                     srcset="${project.imgDesktop} 1x, ${project.imgDesktopRetina} 2x">
-
             <source media="(min-width: 768px) and (max-width: 1279px)" 
                     srcset="${project.imgTablet} 1x, ${project.imgTabletRetina} 2x">
-
             <source media="(max-width: 767px)" 
                     srcset="${project.imgMobile} 1x, ${project.imgMobileRetina} 2x">
-
-
-
-
-  
             <img src="${project.imgDesktop}" alt="${project.title}" class="project-image">
         </picture>
-
                 <p class="tech-text">${project.technologies}</p>
                 </div>
-                            <div class="project-info">
-                                <h3 class="pr-title-text">${project.title}</h3>
+                <div class="project-info">
+                <h3 class="pr-title-text">${project.title}</h3>
                 <button class="pr-btn">
                 <div class="btn">
                 <a href="${project.link}" target="_blank" class="btn-text">Visit</a>
