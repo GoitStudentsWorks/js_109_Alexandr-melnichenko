@@ -2,6 +2,7 @@
 
 @media (min-width: 320px){ 
 
+
 .my-projects {
     display: flex;
     gap: 40px;
@@ -11,7 +12,6 @@
 }
 
     .titleMy {
-        color: var(--Black, #292929);
         font-family: Impact;
         font-size: 52px;
         font-style: normal;
@@ -75,7 +75,6 @@ height: 184px;
 
     
     .tech-text {
-        color: var(--Black, #292929);
     font-family: Poppins;
     font-size: 16px;
     font-style: normal;
@@ -85,7 +84,6 @@ height: 184px;
     }
     
     .pr-title-text {
-        color: var(--Black, #292929);
     font-family: Poppins;
     font-size: 32px;
     font-style: normal;
@@ -131,7 +129,6 @@ height: 184px;
     }
     
     .btn-text {
-        color: var(--Black, #292929);
         font-family: Poppins;
         font-size: 16px;
         font-style: normal;
