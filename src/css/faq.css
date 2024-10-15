@@ -1,6 +1,7 @@
 
 .faq-title {
-  max-width: 320px;
+  box-sizing: border-box;
+  width: 320px;
   font-family: Impact;
   font-weight: 400;
   font-size: 52px;
@@ -17,7 +18,7 @@
 
 /* list */
 .faq-list{
-  max-width: 320px;
+  width: 320px;
 }
 .faq-item {
   min-width: 320px;
@@ -172,8 +173,8 @@ visibility: visible;
   }
   .faq-list{
     width: 592px;
-    position: relative;
-    right: 275px;
+    /* position: relative; */
+    /* right: 275px; */
     padding-top: 265px;
   }
   .faq-item {
