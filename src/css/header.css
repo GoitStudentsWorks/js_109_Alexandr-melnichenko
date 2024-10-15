@@ -5,6 +5,9 @@
   --btn-color: var(--btn-light);
   --icon-color: var(--icon-light);
   --text-green-color: var(--text-green-light);
+  --hover-grey-color: var(--hover-grey-light);
+
+
   --bg-dark: #1E2023;
   --text-dark: #292929;
   --input-dark: #2A2D32;
@@ -12,6 +15,8 @@
   --icon-dark: #204136;
   --text-green-dark: #14C57C;
   --text-grey-dark: #2A2D32;
+  --hover-grey-dark: #3b3f45;
+
   --bg-light:  #F0F0F0;
   --text-light: #F0F0F0;
   --input-light: #E4E5E6;
@@ -19,6 +24,7 @@
   --btn-light: #BCDFD1;
   --icon-light: #BCDFD1;
   --text-green-light: #00B068;
+  --hover-grey-light: #bbb;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -29,8 +35,15 @@
     --icon-color: var(--icon-dark);
     --text-green-color: var(--text-green-dark);
     --text-grey-color: var(--text-grey-dark);
+    --hover-grey-dark: var(--hover-grey-color);
   }
 }
+@media(prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
 body {
   background-color: var(--background);
   transition: background 0.2s linear;
@@ -44,6 +57,7 @@ body.dark {
   --icon-color: var(--icon-dark);
   --text-green-color: var(--text-green-dark);
   --text-grey-color: var(--text-grey-dark);
+  --hover-grey-color: var(--hover-grey-dark);
 }
 body.light {
   --background: var(--bg-light);
@@ -53,6 +67,7 @@ body.light {
   --icon-color: var(--icon-light);
   --text-green-color: var(--text-green-light);
   --text-grey-color: var(--text-grey-light);
+  --hover-grey-color: var(--hover-grey-light);
 }
 .section .header-container {
   padding: 20px 20px;
@@ -187,7 +202,7 @@ padding-bottom: 20px; */
 .move-header::before {
   position: absolute;
   content: '';
-  background: #00B068;
+  background: var(--text-green-color);
   /* width: 20px;
   height: 20px; */
   width: 10px;
@@ -201,7 +216,7 @@ padding-bottom: 20px; */
   z-index: 2;
 }
 .input-header:checked + .move-header {
-  background-color: #00B068;
+  background-color: var(--text-green-color);
   border: 1px solid #2A2D32;
 }
 .input-header:checked + .move-header::before {
@@ -242,7 +257,7 @@ padding-bottom: 20px; */
   }
   .menuItem-header:hover,
   .menuItem-header:focus {
-    color:#00b068;
+    color:var(--text-green-color);
   }
   /* .menuItem-header::after {
     content: '';
@@ -350,9 +365,7 @@ padding-bottom: 20px; */
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.03em;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms linear;
   }
   .logo {
     font-family:  "Impact", sans-serif;
