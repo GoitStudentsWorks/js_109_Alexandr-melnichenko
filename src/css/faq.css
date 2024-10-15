@@ -161,7 +161,7 @@ visibility: visible;
   .faq-container {
     display: flex;
     justify-content: space-between;
-    background-image: url('/img/backgroundFaq/faq-decor-1x.png');
+    background-image: url('/img/faq-bg-1.png');
     background-repeat: no-repeat;
     background-size: 526px 408px;
     /* background-position-y: 690px;
@@ -192,7 +192,7 @@ visibility: visible;
   }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .faq-container {
-      background-image: url('/img/backgroundFaq/faq-decor-2x.png');
+      background-image: url('/img/faq-bg-@2x.png');
     }
   }
 }
