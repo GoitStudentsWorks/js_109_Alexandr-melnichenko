@@ -33,9 +33,9 @@
         text-transform: uppercase;
     }
     
-    #projects-section {
+    /*#projects-section {
         margin: auto;
-    }
+    }*/
     
     .projects-part {
         display: flex;
