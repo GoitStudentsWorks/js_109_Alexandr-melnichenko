@@ -41,7 +41,7 @@ const svgCallback = entries => {
         duration: 150,
         animTimingFunction: Vivus.EASE,
       });
-      observer.unobserve(entry.target);
+      svg.unobserve(entry.target);
     }
   });
 };

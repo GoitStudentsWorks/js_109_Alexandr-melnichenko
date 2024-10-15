@@ -1,8 +1,14 @@
+.tech-skills-section {
 
+}
 
 .tech-skills-container {
-    width: 100%;
-    height: 244px;
+  width: 100%;
+     height: auto; 
+    margin: 0 auto;
+    max-width: 360px;
+  min-width: 100vw;
+  
   }
   
   .visually-hidden {
@@ -20,8 +26,8 @@
   .marquee {
     position: relative;
     overflow: hidden;
-    width: 100%;
     height: 280px;
+    min-width: 100vw;
   }
   
   
@@ -34,16 +40,36 @@
     line-height: 104px;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    color: #292929;
     background: #bcdfd1;
-    width: 100%;
-    height: 104px;
+    
   } 
+
+  .dark .marquee-line {
+    background: #204136;
+  }
+
+  .dark .marquee-line-diagonal {
+    background: #2a2d32;
+    color: #14c57c;
+  }
   
-  .current {
+  
+
+  .marquee-line-diagonal {
+    flex-shrink: 0;
+    min-width: 50%;
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 104px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
     color: #00B068;
     background-color: #e4e5e6;
-  }
+    
+  } 
+
+
   
   .marquee-normal, .marquee-diagonal {
     position: absolute;
@@ -71,11 +97,11 @@
   }
   
   .marquee-normal .marquee-inner {
-    animation: marqueeLineNormal 12s linear infinite;
+    animation: marqueeLineNormal 10s linear infinite;
   }
   
   .marquee-diagonal .marquee-inner {
-    animation: marqueeLineDiagonal 12s linear infinite;
+    animation: marqueeLineDiagonal 10s linear infinite;
   }
   
   .marquee-span {
@@ -102,6 +128,9 @@
     vertical-align: middle;
   }
   
+  .dark .marquee-square-diagonal {
+    background: #f0f0f0; 
+  }
   
 
 
@@ -127,7 +156,10 @@
   
    @media only screen and (min-width: 768px) {
     .tech-skills-container {
-      height: 280px;
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      max-width: 768px;
     }
   
     .marquee-line {
@@ -149,7 +181,10 @@
   
   @media only screen and (min-width: 1280px) {
     .tech-skills-container {
-      height: 280px;
+      width: 100%;
+       height: auto;
+      margin: 0 auto;
+      max-width: 1200px;
     }
   
     .marquee-line {
