@@ -1,10 +1,18 @@
-.section-hero {
+/* .section-hero {
   box-sizing: border-box;
   background-image: url('/img/hero/decor.webp');
   background-repeat: repeat-y;
   background-position: top 0 right 50px;
   background-size: 350px 264px;
   padding-top: 112px;
+} */
+
+.hero-container {
+  box-sizing: border-box;
+  background-image: url('/img/hero/decor.webp');
+  background-repeat: repeat-y;
+  background-position: top 0 right 50px;
+  background-size: 350px 264px;
 }
 
 .hero-picture {
@@ -116,13 +124,13 @@
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .section-hero {
+    .hero-container {
     background-image: url('../img/hero/decor@2x.webp');
   }
 }
 
 @media screen and (min-width: 768px) {
-  .section-hero {
+    .hero-container{
     background-size: 356px 276px;
     padding-top: 88px;
   }
@@ -176,16 +184,16 @@
   }
 }
 @media screen and (min-width: 1280px) {
-  .section-hero {
+    /* .hero-container {
     background-size: 356px 276px;
     background-repeat: no-repeat;
-  }
+  } */
 
   .hero-container {
-    background-image: url('/img/hero/decor.webp');
-    background-size: 356px 276px;
-    background-repeat: no-repeat;
-    background-position: bottom 0 left 200px;
+    background-image: url('/img/hero/decor.webp'), url('/img/hero/decor.webp');
+    background-size: 356px 276px, 356px 276px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 0 right 50px, bottom 0 left 200px;
   }
   .hero-picture {
     display: block;
