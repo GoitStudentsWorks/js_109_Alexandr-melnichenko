@@ -70,19 +70,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 .prev-button svg {
     rotate: -180deg;
 }
 .prev-button svg,
 .next-button svg {
-    stroke: #292929;
+    stroke: #292929;   
 }
 
 .slider-button[disabled] {
     border: 1px solid #e4e5e6;
+    pointer-events: none;    
 }
+
 .slider-button[disabled] svg {
     fill: none;
     stroke: #E4E5E6;
@@ -90,8 +91,14 @@
 .slider-button:hover {
     color: #BBBBBB
 }
+.slider-button[disabled]:hover {
+    cursor: default;
+}
 
 @media screen and (min-width: 768px) {
+    .container {
+        padding: 62px 32px 4px;
+    }
     
     .swiper-container {
         max-width: 768px;
@@ -103,6 +110,9 @@
 
 
 @media screen and (min-width: 1280px) {
+    .container {
+        padding: 82px 32px 48px;
+    }
 
     .swiper-container {
         max-width: 1280px;
