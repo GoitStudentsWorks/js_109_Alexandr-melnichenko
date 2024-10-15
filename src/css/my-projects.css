@@ -1,8 +1,5 @@
 /*mobile*/
 
-@media (min-width: 320px){ 
-
-
 .my-projects {
     display: flex;
     gap: 40px;
@@ -36,7 +33,7 @@
     
     #projects {
         margin: auto;
-    }*/
+    }
     
     .projects-part {
         display: flex;
@@ -99,7 +96,6 @@ height: 184px;
         display: flex;
         flex-direction: column;
         gap: 16px;
-    
     }
     
     #projects-list .project-info h3 {
@@ -180,13 +176,16 @@ width: 117px;
         align-self: stretch;
        
     }
-
-    }
     
     
     /*tablet*/
-    @media (min-width: 767px) {
+   @media only screen and (min-width: 768px) {
 
+.projects-part {
+  gap: 60px;
+}
+
+     
         .my-projects {
             gap: 60px;
         }
@@ -240,7 +239,11 @@ gap: 16px;
     
     /*desktop*/
     @media (min-width: 1280px) {
-    
+
+.projects-part {
+  gap: 80px;
+}
+      
         .my-projects {
             gap: 80px;
         }
