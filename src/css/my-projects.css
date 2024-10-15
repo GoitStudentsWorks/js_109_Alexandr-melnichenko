@@ -110,11 +110,13 @@ height: 184px;
         width: 125px;
         height: 48px;
         border-radius: 8px;
-        border-color: white;
-    background:#E4E5E6;
-    margin-left: auto;
-    padding: 12px 24px;
-    cursor: pointer;
+        margin-left: auto;
+        padding: 12px 24px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background-color: lightgrey;
+        background: var(--input-color);
     }
     
     .pr-btn:hover {
@@ -158,6 +160,7 @@ height: 184px;
     line-height: 28px; /* 155.556% */
     letter-spacing: 0.5px;
     text-transform: uppercase;
+    color: var(--text-color);
 
         border: none;
         outline: none;
