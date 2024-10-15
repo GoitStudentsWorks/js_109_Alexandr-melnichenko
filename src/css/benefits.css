@@ -35,7 +35,6 @@
   border-radius: 8px;
   width: 48px;
   height: 48px;
-  /* background-color: #bcdfd1; */
   background: var(--icon-color);
   display: grid;
   align-items: center;
