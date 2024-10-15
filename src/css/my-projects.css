@@ -165,6 +165,7 @@ height: 184px;
 
         border: none;
         outline: none;
+        background-color: transparent;
     }
 
     .load-btn:hover {
