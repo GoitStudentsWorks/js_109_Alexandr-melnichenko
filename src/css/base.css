@@ -16,15 +16,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-}
 
-/* display: flex;
+  display: flex;
   flex-direction: column;
   min-width: 100vw;
   min-height: 100vh;
   margin: 0; 
 
-} */
+} 
+
+
+}
+
 
 @font-face {
   font-family: 'Impact';
