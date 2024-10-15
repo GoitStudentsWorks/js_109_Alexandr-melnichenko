@@ -1,11 +1,11 @@
 footer {
   width: 100%;
   margin: 0 auto;
+  border-top: 1px solid #E4E5E6;
 }
 
 
 .footer-block {
-  border-top: 1px solid #e4e5e6;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 40px;
@@ -13,7 +13,7 @@ footer {
 }
 
 .container {
-  padding: 0 20px;
+  padding: 40px 20px 24px;
 }
 
 .footer-logo-link {
@@ -94,7 +94,7 @@ footer {
     text-align: right;
   }
   .container {
-    padding: 0 32px;
+    padding: 40px 32px 24px;
   }
 }
 
@@ -112,8 +112,5 @@ footer {
 
   .social-links {
     margin-bottom: 0px;
-  }
-  .container {
-    padding: 0 32px;
   }
 }
