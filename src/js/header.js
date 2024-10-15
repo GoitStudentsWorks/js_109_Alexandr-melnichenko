@@ -61,7 +61,10 @@ function toggleMenu() {
     menuIcon.style.display = "block";
   } else {
     menu.classList.add("showMenu");
-    closeIcon.style.display = "block";
+    closeIcon.style.display = "flex";
+    closeIcon.style.position = "fixed";
+    closeIcon.style.width = "32px";
+    closeIcon.style.height = "32px";
     menuIcon.style.display = "none";
   }
 }
