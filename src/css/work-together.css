@@ -1,6 +1,10 @@
+.work-together .container{
+  padding: 80px 20px;
+}
+
 .work-together {
   box-sizing: border-box;
-  padding: 40px 20px;
+  /* padding: 40px 20px; */
   max-width: 360px;
   margin: 0 auto;
   position: relative;
@@ -139,7 +143,7 @@ a:focus {
   padding: 12px 24px;
   /* width: 320px; */
   height: 48px;
-  background-color: #00b068;
+  background-color: var(--btn-color);
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -268,11 +272,16 @@ color: var(--text-color);
 /*----------------------END MODAL--------------------*/
 
 @media screen and (min-width: 768px) {
+  .work-together .container {
+      padding: 120px 32px 124px;
+    }
+
   .work-together {
-    padding: 62px 32px;
+    /* padding: 62px 32px; */
     max-width: 768px;
     margin: 0 auto;
     background-image: url(../img/work/decor-bg-1x-tablet.png);
+    background-size: 336px 260px;
     background-repeat: no-repeat;
     background-position: 100% 0;
   }
@@ -280,6 +289,9 @@ color: var(--text-color);
   @media screen and (min-resolution: 192dpi) {
     .work-together {
       background-image: url(../img/work/decor-bg-2x-tablet.png);
+      background-repeat: no-repeat;
+      background-size: 336px 260px;
+      background-position: 100% 0;
     }
   }
 
@@ -339,16 +351,22 @@ color: var(--text-color);
 
 
 @media screen and (min-width: 1280px) {
+  .work-together .container {
+    padding: 117px 32px 164px;
+  }
+
   .work-together {
-    padding: 82px 32px;
+    /* padding: 82px 32px; */
     max-width: 1280px;
     margin: 0 auto;
     background-image: url(../img/work/decor-1x-work-desktop.png);
+    background-size: 526px 408px;
   }
 
     @media screen and (min-resolution: 192dpi) {
       .work-together {
         background-image: url(../img/work/decor-2x-work-desktop.png);
+        background-size: 526px 408px;
       }
     }
 
