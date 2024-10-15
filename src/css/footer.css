@@ -12,7 +12,9 @@ footer {
   /* margin-bottom: 24px; */
 }
 
-
+.container {
+  padding: 0 20px;
+}
 
 .footer-logo-link {
   font-family: "Impact", sans-serif;
@@ -91,6 +93,9 @@ footer {
   .footer-bottom-par {
     text-align: right;
   }
+  .container {
+    padding: 0 32px;
+  }
 }
 
 @media screen and (min-width:1280px) {
@@ -107,5 +112,8 @@ footer {
 
   .social-links {
     margin-bottom: 0px;
+  }
+  .container {
+    padding: 0 32px;
   }
 }
