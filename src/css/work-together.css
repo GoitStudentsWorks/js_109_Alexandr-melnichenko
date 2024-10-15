@@ -96,7 +96,7 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  background-color: #e4e5e6;
+  background-color: var(--input-color);
 }
 
 *,
@@ -117,14 +117,14 @@ a:focus {
   padding: 16px;
   /* width: 288px; */
   height: 128px;
-  background-color: #e4e5e6;
+  background-color: var(--input-color);
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  background-color: #e4e5e6;
+  /* background-color: #e4e5e6; */
 }
 
 .work-together-form textarea:hover,
