@@ -86,12 +86,16 @@
 .slider-button[disabled] svg {
     fill: none;
     stroke: #E4E5E6;
+
 }
 .slider-button:hover {
     color: #BBBBBB
 }
 
 @media screen and (min-width: 768px) {
+    .container {
+        padding: 62px 32px 4px;
+    }
     
     .swiper-container {
         max-width: 768px;
@@ -103,6 +107,9 @@
 
 
 @media screen and (min-width: 1280px) {
+    .container {
+        padding: 82px 32px 48px;
+    }
 
     .swiper-container {
         max-width: 1280px;
