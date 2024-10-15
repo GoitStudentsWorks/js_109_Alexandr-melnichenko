@@ -11,10 +11,12 @@
   margin-bottom: 40px;
 }
 .faq-title-accent{
-  color: #00b068;
+  color: var(--text-green-light);
 }
 
-
+.dark .faq-title-accent{
+  color: var(--text-green-dark);
+}
 
 /* list */
 .faq-list{
@@ -159,11 +161,13 @@ visibility: visible;
   .faq-container {
     display: flex;
     justify-content: space-between;
-    background-image: url(/img/faq/faq-decor-1x.png);
+    background-image: url('/img/faq-bg-blur.png');
     background-repeat: no-repeat;
     background-size: 526px 408px;
     background-position-y: 690px;
     background-position-x: 30px;
+/*     background-position-y: bottom 82px;
+    background-position-x: left 32px; */
   }
   .faq-title {
     width: 520px;
@@ -188,7 +192,7 @@ visibility: visible;
   }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .faq-container {
-      background-image: url('/img/faq/faq-decor-2x.png');
+      background-image: url('/img/faq-bg-blur-@2x.png');
     }
   }
 }
