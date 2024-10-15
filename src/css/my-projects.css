@@ -33,9 +33,9 @@
         text-transform: uppercase;
     }
     
-    #projects-section {
+    /*#projects-section {
         margin: auto;
-    }
+    }*/
     
     .projects-part {
         display: flex;
@@ -165,6 +165,7 @@ height: 184px;
 
         border: none;
         outline: none;
+        background-color: transparent;
     }
 
     .load-btn:hover {
