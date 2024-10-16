@@ -2,13 +2,6 @@ import Vivus from 'vivus';
 
 const svgList = document.querySelector('.benefits-list');
 
-const svgSet = [
-  'icon-hourglass-02',
-  'icon-user-01',
-  'icon-brush-01',
-  'icon-message-chat-circle',
-];
-
 const options = {
   root: null,
   rootMargin: '0px',
@@ -41,7 +34,7 @@ const svgCallback = entries => {
         duration: 150,
         animTimingFunction: Vivus.EASE,
       });
-      observer.unobserve(entry.target);
+      svg.unobserve(entry.target);
     }
   });
 };

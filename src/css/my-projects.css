@@ -1,7 +1,5 @@
 /*mobile*/
 
-@media (min-width: 320px){ 
-
 .my-projects {
     display: flex;
     gap: 40px;
@@ -11,7 +9,7 @@
 }
 
     .titleMy {
-         color: var(--Black, #292929); 
+        color: var(--text-color);
         font-family: Impact;
         font-size: 52px;
         font-style: normal;
@@ -23,7 +21,7 @@
     }
     
     .titleProjects {
-        color: #00B068;
+        color: var(--text-green-color);
         font-family: Impact;
         font-size: 52px;
         font-style: normal;
@@ -33,7 +31,7 @@
         text-transform: uppercase;
     }
     
-    #projects-section {
+    #projects {
         margin: auto;
     }
     
@@ -41,7 +39,6 @@
         display: flex;
         gap: 40px;
         flex-direction: column;
-        padding: 0 20px;
         margin: 0;
     }
 
@@ -75,7 +72,7 @@ height: 184px;
 
     
     .tech-text {
-        color: var(--Black, #292929);
+        color: var(--text-color);
     font-family: Poppins;
     font-size: 16px;
     font-style: normal;
@@ -85,7 +82,7 @@ height: 184px;
     }
     
     .pr-title-text {
-        color: var(--Black, #292929);
+        color: var(--text-color);
     font-family: Poppins;
     font-size: 32px;
     font-style: normal;
@@ -99,7 +96,6 @@ height: 184px;
         display: flex;
         flex-direction: column;
         gap: 16px;
-    
     }
     
     #projects-list .project-info h3 {
@@ -113,15 +109,15 @@ height: 184px;
         width: 125px;
         height: 48px;
         border-radius: 8px;
-        border-color: white;
-    background:#E4E5E6;
+        border: none;
+    background: var(--input-color);
     margin-left: auto;
     padding: 12px 24px;
     cursor: pointer;
     }
     
     .pr-btn:hover {
-    background: #BBB;
+    background: var(--hover-grey-color);
     }
     
     .btn {
@@ -131,7 +127,7 @@ height: 184px;
     }
     
     .btn-text {
-        color: var(--Black, #292929);
+        color: var(--text-color);
         font-family: Poppins;
         font-size: 16px;
         font-style: normal;
@@ -162,13 +158,16 @@ height: 184px;
     line-height: 28px; /* 155.556% */
     letter-spacing: 0.5px;
     text-transform: uppercase;
+    background: var(--background);
+    color: var(--text-color);
 
         border: none;
         outline: none;
+        background-color: transparent;
     }
 
     .load-btn:hover {
-        color: #00B068;
+        color: var(--text-green-color);
     }
 
     .icon-load {
@@ -177,13 +176,16 @@ width: 117px;
         align-self: stretch;
        
     }
-
-    }
     
     
     /*tablet*/
-    @media (min-width: 767px) {
+   @media only screen and (min-width: 768px) {
 
+.projects-part {
+  gap: 60px;
+}
+
+     
         .my-projects {
             gap: 60px;
         }
@@ -237,7 +239,11 @@ gap: 16px;
     
     /*desktop*/
     @media (min-width: 1280px) {
-    
+
+.projects-part {
+  gap: 80px;
+}
+      
         .my-projects {
             gap: 80px;
         }
