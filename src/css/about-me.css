@@ -1,9 +1,4 @@
 
-.about-me  {
-   padding: 40px 20px;
-}
-
-
 .about-me-title {
 font-family: "Impact", sans-serif;   
 font-size: 52px;
@@ -86,9 +81,7 @@ margin-bottom: 40px;
 @media only screen and (min-width: 768px) {
     
 
-    .about-me  {
-        padding: 82px 32px;
-     }
+   
 
     .about-me-wrapper  {
         background-image: url(/img/about-me-decor-tablet.png);
@@ -192,10 +185,8 @@ margin-bottom: 40px;
 
 @media only screen and (min-width: 1280px) {
     
-    .about-me  {
-        padding: 82px 32px;
-     }
-    .about-me-wrapper {
+    
+     .about-me-wrapper {
         background-image: url(/img/about-me-decor-desctop.png);
         background-repeat: no-repeat;
         background-position: right 60px  bottom 300px;
