@@ -28,7 +28,7 @@ function renderReviews(reviews) {
         <li class="review-item swiper-slide">
             <p class="review-text">${review}</p>
             <div class="person-box">
-                <img class="person-icon" src="${avatar_url}" alt="${author}">
+                <img class="person-icon" src="${avatar_url || 'path/to/default-image.png'}" alt="${author}">
                 <p class="person-text">${author}</p>
             </div>
         </li>
