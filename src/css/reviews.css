@@ -19,6 +19,7 @@
 }
 .swiper-wrapper {
     display: flex;
+
 }
 .review-item {
     width: 100%; 
@@ -26,7 +27,12 @@
     background-color: var(--input-color);
     padding: 32px;
     box-sizing: border-box;
-
+    display: flex;
+    flex-direction: column;
+}
+.review-item.show {
+    opacity: 1;
+    transform: translateY(0);
 }
     
 .review-text {
@@ -43,6 +49,7 @@
     display: flex;
     gap: 16px;
     align-items: center;
+    margin-top: auto;
 }
 .person-icon {
     border-radius: 24px;
@@ -72,19 +79,21 @@
     align-items: center;
     justify-content: center;
     background: var(--background);
-    
+    transition: transform 0.2s ease, background-color 0.2s ease;  
 }
+
 .prev-button svg {
-    rotate: -180deg;
+    transform: rotate(-180deg);
 }
 .prev-button svg,
 .next-button svg {
-    stroke: var(--text-color);
+    stroke: var(--text-color);    
 }
 
 .slider-button[disabled] {
     border: 1px solid var(--input-color);
     background: var(--background);
+    cursor: not-allowed;
 }
 .slider-button[disabled] svg {
     fill: none;
@@ -103,7 +112,6 @@
         font-size: 72px;
     }
 }
-
 
 @media screen and (min-width: 1280px) {
 
