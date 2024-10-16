@@ -1,3 +1,9 @@
+
+.about-me  {
+   padding: 40px 20px;
+}
+
+
 .about-me-title {
 font-family: "Impact", sans-serif;   
 font-size: 52px;
@@ -28,6 +34,10 @@ margin-bottom: 40px;
     margin-bottom: 40px;
 }
 
+.about-me-section-flex {
+    width: 320px;
+    height: auto;
+}
 
 
 
@@ -75,6 +85,11 @@ margin-bottom: 40px;
 
 @media only screen and (min-width: 768px) {
     
+
+    .about-me  {
+        padding: 82px 32px;
+     }
+
     .about-me-wrapper  {
         background-image: url(/img/about-me-decor-tablet.png);
         background-repeat: no-repeat;
@@ -96,6 +111,14 @@ margin-bottom: 40px;
         display: flex;
         flex-direction: row;
         gap: 32px;
+        width: 704px;
+        margin-bottom: 60px;
+    }
+
+
+
+    .about-me-text-gap {
+        margin-bottom: unset;
     }
 
     .about-me-subtitle-flex {
@@ -109,6 +132,7 @@ margin-bottom: 40px;
         padding-top: 368px;
         width: 336px;
         height: 392px;
+        margin-bottom: unset;
     }
 
    .flex-for-tablet {
@@ -120,6 +144,10 @@ margin-bottom: 40px;
     width: 336px;
     height: 280px;
    }
+
+   .about-me-section {
+    margin-bottom: unset;
+}
 
    .about-me-title {
     font-family: "Impact", sans-serif;   
@@ -163,7 +191,10 @@ margin-bottom: 40px;
 }
 
 @media only screen and (min-width: 1280px) {
-
+    
+    .about-me  {
+        padding: 82px 32px;
+     }
     .about-me-wrapper {
         background-image: url(/img/about-me-decor-desctop.png);
         background-repeat: no-repeat;
@@ -209,6 +240,10 @@ margin-bottom: 40px;
             margin-bottom: 32px;
         }
 
+        .about-me-text-gap {
+            margin-bottom: unset;
+        }
+
         .about-me-subtitle-flex {
             display: flex;
             flex-direction: column;
@@ -229,8 +264,14 @@ margin-bottom: 40px;
             height: 280px;
            }
 
+           .about-me-section {
+            margin-bottom: unset;
+        }
+
         .about-me-section-flex {
             gap: 136px;
+            margin-bottom: 80px;
+            width: auto;
         }
 
         .about-me-image {
@@ -238,6 +279,7 @@ margin-bottom: 40px;
             padding-left: 208px;
             width: 384px;
             height: 448px;
+            margin-bottom: unset;
         }
 
         .flex-for-tablet {
