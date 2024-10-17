@@ -4,7 +4,7 @@
   line-height: 123%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  max-width: 320px;    /* було min-width: 320px - розривало екран на 320 */
+  max-width: 320px; /* було min-width: 320px - розривало екран на 320 */
   margin-bottom: 40px;
 }
 
@@ -44,7 +44,7 @@
 
 @media only screen and (min-width: 768px) {
   .benefits-list-header.prefer {
-    width: 704px;
+    max-width: 704px;
     font-weight: 400;
     font-size: 108px;
     line-height: 115%;
@@ -101,7 +101,7 @@
 
   .benefits-list {
     position: relative;
-    top: -100px;
+    top: -80px;
     grid-template-columns: repeat(3, 384px);
     grid-template-rows: repeat(2, 1fr);
     align-items: center;
