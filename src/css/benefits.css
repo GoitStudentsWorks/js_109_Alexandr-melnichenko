@@ -93,7 +93,12 @@
     background-repeat: no-repeat;
     background-size: 526px 408px;
     background-position: top 10px right 100px;
+    height: 810px;
   }
+
+section.benefits {
+  padding-top: 24px;
+}
 
   .benefits-list-header {
     margin: 0;
