@@ -4,7 +4,7 @@
   line-height: 123%;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  min-width: 320px;
+  max-width: 320px;    /* було min-width: 320px - розривало екран на 320 */
   margin-bottom: 40px;
 }
 
