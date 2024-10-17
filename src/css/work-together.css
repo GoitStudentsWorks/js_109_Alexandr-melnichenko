@@ -1,10 +1,10 @@
-.work-together .container{
+/* .work-together .container{
   padding: 80px 20px;
-}
+} */
 
 .work-together {
   box-sizing: border-box;
-  /* padding: 40px 20px; */
+  padding: 40px 0px 80px;
   max-width: 360px;
   margin: 0 auto;
   position: relative;
@@ -272,12 +272,12 @@ color: var(--text-color);
 /*----------------------END MODAL--------------------*/
 
 @media screen and (min-width: 768px) {
-  .work-together .container {
+  /* .work-together .container {
       padding: 120px 32px 124px;
-    }
+    } */
 
   .work-together {
-    /* padding: 62px 32px; */
+    padding: 62px 0px 124px;
     max-width: 768px;
     margin: 0 auto;
     background-image: url(../img/work/decor-bg-1x-tablet.png);
@@ -351,12 +351,12 @@ color: var(--text-color);
 
 
 @media screen and (min-width: 1280px) {
-  .work-together .container {
+  /* .work-together .container {
     padding: 117px 32px 164px;
-  }
+  } */
 
   .work-together {
-    /* padding: 82px 32px; */
+    padding: 82px 0px 164px;
     max-width: 1280px;
     margin: 0 auto;
     background-image: url(../img/work/decor-1x-work-desktop.png);
