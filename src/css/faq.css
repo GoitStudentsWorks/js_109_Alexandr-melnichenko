@@ -1,6 +1,6 @@
 .faq-title {
   box-sizing: border-box;
-  width: 320px;
+  max-width: 320px;
   font-family: Impact;
   font-weight: 400;
   font-size: 52px;
@@ -123,6 +123,7 @@ visibility: visible;
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px)  {
   .faq-title {
+    max-width: none;
       width: 592px;
       font-size: 108px;
       line-height: 1.1;
