@@ -103,8 +103,12 @@
   height: 232px;
   background: var(--input-color);
   padding: 0;
-  width: 100vw;
+   width: 100vw;  
+   
+  
   margin-bottom: 80px;
+
+  margin: 0 auto;
 }
 
 .hero-social-list {
