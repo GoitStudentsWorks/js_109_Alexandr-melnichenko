@@ -30,7 +30,7 @@ margin-bottom: 40px;
 }
 
 .about-me-section-flex {
-    width: 320px;
+    max-width: 320px;
     height: auto;
 }
 
@@ -104,7 +104,7 @@ margin-bottom: 40px;
         display: flex;
         flex-direction: row;
         gap: 32px;
-        width: 704px;
+        max-width: 704px;
         margin-bottom: 60px;
     }
 
@@ -262,7 +262,7 @@ margin-bottom: 40px;
         .about-me-section-flex {
             gap: 136px;
             margin-bottom: 80px;
-            width: auto;
+            max-width: unset;
         }
 
         .about-me-image {
