@@ -1,11 +1,12 @@
-/* .work-together .container{
-  padding: 80px 20px;
-} */
+.work-together .container{
+  /* padding: 80px 20px; */
+  max-width: 360px;
+}
 
 .work-together {
   box-sizing: border-box;
   padding: 40px 0px 80px;
-  max-width: 360px;
+  
   margin: 0 auto;
   position: relative;
   /* background-color: #F0F0F0; */
@@ -108,7 +109,7 @@ a:focus {
   outline: none !important;
 }
 
-.work-together-form input:hover,
+.work-together-form input:focus,
 .work-together-form input:active {
   border: 1px solid #00b068;
 }
@@ -131,10 +132,10 @@ a:focus {
   /* background-color: #e4e5e6; */
 }
 
-.work-together-form textarea:hover,
+.work-together-form textarea:focus,
 .work-together-form textarea:active {
   border: 1px solid #00b068;
-}
+} 
 
 
 .work-together-button {
@@ -272,13 +273,14 @@ color: var(--text-color);
 /*----------------------END MODAL--------------------*/
 
 @media screen and (min-width: 768px) {
-  /* .work-together .container {
-      padding: 120px 32px 124px;
-    } */
+  .work-together .container {
+      /* padding: 120px 32px 124px; */
+      max-width: 768px;
+    }
 
   .work-together {
     padding: 62px 0px 124px;
-    max-width: 768px;
+    
     margin: 0 auto;
     background-image: url(../img/work/decor-bg-1x-tablet.png);
     background-size: 336px 260px;
@@ -351,9 +353,10 @@ color: var(--text-color);
 
 
 @media screen and (min-width: 1280px) {
-  /* .work-together .container {
-    padding: 117px 32px 164px;
-  } */
+  .work-together .container {
+    /* padding: 117px 32px 164px; */
+    max-width: 1280px;
+  }
 
   .work-together {
     padding: 82px 0px 164px;
