@@ -268,11 +268,12 @@ margin-bottom: 40px;
             gap: 136px;
             margin-bottom: 80px;
             max-width: unset;
+            padding-left: 208px;
         }
 
         .about-me-image {
             padding-top: 272px;
-            padding-left: 208px;
+            
             width: 384px;
             height: 448px;
             margin-bottom: unset;
