@@ -46,8 +46,8 @@ svg.observe(svgList);
 
 window.addEventListener('scroll', function () {
   const scrollButton = document.querySelector('.scroll-to-top');
-  const scrollPosition = window.scrollY + this.window.innerHeight;
-  const allDocumentHeight = this.document.documentElement.scrollHeight;
+  const scrollPosition = window.scrollY + window.innerHeight;
+  const allDocumentHeight = document.documentElement.scrollHeight;
 
   if (allDocumentHeight - scrollPosition <= 3000) {
     scrollButton.classList.add('visible-scroll');
