@@ -160,10 +160,12 @@ padding-bottom: 0;
       width: 100%;
       height: auto;
       margin: 0 auto;
-      padding-bottom: 20px;
-     
     }
   
+    .tech-skills-section {
+      padding-bottom: 20px;
+    }
+
     .marquee-line {
         font-size: 36px;
         line-height: 128px;
@@ -183,13 +185,9 @@ padding-bottom: 0;
   
   @media only screen and (min-width: 1280px) {
     .tech-skills-container {
-      padding-bottom: 45px;
        height: auto;
-    
     }
 
-    
-  
     .marquee-line {
         font-size: 36px;
         line-height: 128px;

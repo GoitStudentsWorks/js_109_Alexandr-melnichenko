@@ -83,7 +83,9 @@ margin-bottom: 40px;
 
 @media only screen and (min-width: 768px) {
     
-
+    .about-me-section:not(:last-child) {
+        margin-bottom: 0px;
+    }
    
 
     .about-me-wrapper  {
@@ -284,5 +286,7 @@ margin-bottom: 40px;
            .about-me-item:not(:last-child) {
             margin-bottom: 16px;
            }
-        
+
+           
+
     }
