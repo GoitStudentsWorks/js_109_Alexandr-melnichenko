@@ -62,3 +62,4 @@ document.querySelector('.scroll-to-top').addEventListener('click', function () {
     behavior: 'smooth',
   });
 });
+
