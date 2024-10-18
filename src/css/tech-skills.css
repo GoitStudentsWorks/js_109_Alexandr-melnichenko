@@ -1,5 +1,6 @@
 .tech-skills-section {
 margin: 0 auto;
+padding-bottom: 0;
 }
 
 
@@ -159,6 +160,7 @@ margin: 0 auto;
       width: 100%;
       height: auto;
       margin: 0 auto;
+      padding-bottom: 20px;
      
     }
   
@@ -181,10 +183,9 @@ margin: 0 auto;
   
   @media only screen and (min-width: 1280px) {
     .tech-skills-container {
-      
+      padding-bottom: 45px;
        height: auto;
-      /* margin: 0 auto;
-      max-width: 1280px; */
+    
     }
 
     
