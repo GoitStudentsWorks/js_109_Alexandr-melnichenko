@@ -89,6 +89,7 @@
 }
 
 .work-together-input {
+  box-sizing: border-box;
   border-radius: 8px;
   border: none;
   padding: 16px;
@@ -115,6 +116,7 @@ a:focus {
 }
 
 .work-together-textarea {
+  box-sizing: border-box;
   resize: none;
   border: 0;
   border-color: #00b068;
@@ -180,7 +182,7 @@ a:focus {
   letter-spacing: 0.04em;
   color: #e74a3b;
   left: 0px;
-  top: 80px;
+  top: 47px;
 
 
   &.is-close-input-signature {
@@ -422,7 +424,7 @@ color: var(--text-color);
 
   .input-signature {
     left: 0px;
-    top: 62px;
+    /* top: 45px; */
   }
 
   /*-------------MODAL------*/

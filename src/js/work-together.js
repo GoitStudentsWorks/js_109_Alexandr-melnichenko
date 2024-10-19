@@ -44,6 +44,15 @@ async function sendingAsRequest(event) {
   const yourEmail = input.elements.email.value.trim();
   const textareaMessage = input.elements.message.value.trim();
   try {
+    if (yourEmail === '' || textareaMessage === '') {
+      return iziToast.warning({
+        backgroundColor: '#F4A460',
+        position: 'center',
+        message:
+          'Sorry! Something went wrong, please check that all fields are filled in correctly.',
+      });
+    }
+
     const posts = await postRequest(yourEmail, textareaMessage);
     messageText.textContent = posts.data.message;
     modalWindow.classList.remove('is-close-modal');
@@ -62,8 +71,7 @@ async function sendingAsRequest(event) {
     iziToast.warning({
       backgroundColor: '#F4A460',
       position: 'center',
-      message:
-        'Sorry! Something went wrong, please check that all fields are filled in correctly.',
+      message: 'Sorry! Something went wrong.',
     });
     console.log(error);
   }
