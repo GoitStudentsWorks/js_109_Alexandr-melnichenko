@@ -9,6 +9,7 @@ const validMail = document.querySelector('.input-icon');
 const messageText = document.querySelector('.modal-window-paragraph');
 const modalWindow = document.querySelector('.work-together-modal');
 const closeButtonModal = document.querySelector('.modal-window-button');
+const body = document.querySelector('body');
 
 const message = {
   email: '',
@@ -46,6 +47,7 @@ async function sendingAsRequest(event) {
     const posts = await postRequest(yourEmail, textareaMessage);
     messageText.textContent = posts.data.message;
     modalWindow.classList.remove('is-close-modal');
+    body.style.overflow = 'hidden';
 
     const textarea = document.querySelector('.work-together-textarea');
     const email = document.querySelector('.work-together-input');
@@ -85,8 +87,10 @@ async function postRequest(email, comment) {
 
 function closeWindow(event) {
   modalWindow.classList.add('is-close-modal');
+  body.style.overflow = 'auto';
   if (event.key === 'Escape') {
     modalWindow.classList.add('is-close-modal');
+    body.style.overflow = 'auto';
   }
 }
 closeButtonModal.addEventListener('click', closeWindow);
