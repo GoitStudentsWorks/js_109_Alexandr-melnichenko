@@ -9,6 +9,7 @@ const validMail = document.querySelector('.input-icon');
 const messageText = document.querySelector('.modal-window-paragraph');
 const modalWindow = document.querySelector('.work-together-modal');
 const closeButtonModal = document.querySelector('.modal-window-button');
+const body = document.querySelector('body');
 
 const message = {
   email: '',
@@ -43,9 +44,19 @@ async function sendingAsRequest(event) {
   const yourEmail = input.elements.email.value.trim();
   const textareaMessage = input.elements.message.value.trim();
   try {
+    if (yourEmail === '' || textareaMessage === '') {
+      return iziToast.warning({
+        backgroundColor: '#F4A460',
+        position: 'center',
+        message:
+          'Sorry! Something went wrong, please check that all fields are filled in correctly.',
+      });
+    }
+
     const posts = await postRequest(yourEmail, textareaMessage);
     messageText.textContent = posts.data.message;
     modalWindow.classList.remove('is-close-modal');
+    body.style.overflow = 'hidden';
 
     const textarea = document.querySelector('.work-together-textarea');
     const email = document.querySelector('.work-together-input');
@@ -60,8 +71,7 @@ async function sendingAsRequest(event) {
     iziToast.warning({
       backgroundColor: '#F4A460',
       position: 'center',
-      message:
-        'Sorry! Something went wrong, please check that all fields are filled in correctly.',
+      message: 'Sorry! Something went wrong.',
     });
     console.log(error);
   }
@@ -85,8 +95,10 @@ async function postRequest(email, comment) {
 
 function closeWindow(event) {
   modalWindow.classList.add('is-close-modal');
+  body.style.overflow = 'auto';
   if (event.key === 'Escape') {
     modalWindow.classList.add('is-close-modal');
+    body.style.overflow = 'auto';
   }
 }
 closeButtonModal.addEventListener('click', closeWindow);
